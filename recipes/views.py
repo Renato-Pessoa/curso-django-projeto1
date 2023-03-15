@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def home(request):
 
@@ -10,7 +9,4 @@ def home(request):
     return render(request, 'recipes/home.html', context)
 
 def contact(request):
-    return HttpResponse("Contact")
-
-def about(request):
-    return HttpResponse("About")
+    return render(request, 'recipes/contact.html')
