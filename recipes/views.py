@@ -6,7 +6,6 @@ def home(request):
         'name': 'Renato Pessoa'
     }
 
-    return render(request, 'recipes/home.html', context)
+    return render(request, 'recipes/pages/home.html', context)
 
-def contact(request):
-    return render(request, 'recipes/contact.html')
+
